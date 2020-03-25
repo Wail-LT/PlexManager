@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_nav_movie"
+        android:checkable="true"
+        android:title="@string/home_nav_movie" />
+    <item
+        android:id="@+id/home_nav_serie"
+        android:checkable="true"
+        android:title="@string/home_nav_serie" />
+    <item
+        android:id="@+id/home_nav_downloaded"
+        android:checkable="true"
+        android:title="@string/home_nav_downloaded" />
+</menu>

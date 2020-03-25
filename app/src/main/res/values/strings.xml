@@ -1,0 +1,40 @@
+<resources>
+
+    <string name="app_name">PlexManager</string>
+
+    <string name="menu_search">Search</string>
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_search">Search</string>
+    <string name="bottom_nav_setting">Setting</string>
+
+
+    <string name="movie">Films</string>
+    <string name="action">Action</string>
+    <string name="action_adventure">Action &amp; Adventure</string>
+    <string name="adventure">Adventure</string>
+    <string name="animation">Animation</string>
+    <string name="comedy">Comedy</string>
+    <string name="crime">Crime</string>
+    <string name="drama">Drama</string>
+    <string name="family">Family</string>
+    <string name="kids">Kids</string>
+    <string name="fantasy">Fantasy</string>
+    <string name="Sci_Fi">Sci-Fi &amp; Fantasy</string>
+    <string name="horror">Horror</string>
+    <string name="sciencefiction">ScienceFiction</string>
+    <string name="thriller">Thriller</string>
+
+    <string name="validate_setting">validate</string>
+    <string name="server_ip">Server ip</string>
+    <string name="server_port">Server Port</string>
+    <string name="home_nav_movie">Movies</string>
+    <string name="home_nav_serie">Series</string>
+    <string name="home_nav_downloaded">Downloaded</string>
+
+    <string name="download_button">Download</string>
+    <string name="genre">Genre</string>
+    <string name="similar_movies">Similar Movies</string>
+    <string name="similar_series">Similar Series</string>
+    <string name="search_placeholder">Search</string>
+
+</resources>

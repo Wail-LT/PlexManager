@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/bottom_nav_home">
+    <fragment
+        android:id="@+id/bottom_nav_home"
+        android:name="com.esilvwl.plex_manager.home.HomeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_bottom_nav_home_to_bottom_nav_movieDetails"
+            app:destination="@id/bottom_nav_movieDetails" />
+        <action
+            android:id="@+id/action_bottom_nav_home_to_bottom_nav_serieDetails"
+            app:destination="@id/bottom_nav_serieDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottom_nav_search"
+        android:name="com.esilvwl.plex_manager.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_bottom_nav_search_to_bottom_nav_movieDetails"
+            app:destination="@id/bottom_nav_movieDetails" />
+        <action
+            android:id="@+id/action_bottom_nav_search_to_bottom_nav_serieDetails"
+            app:destination="@id/bottom_nav_serieDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottom_nav_setting"
+        android:name="com.esilvwl.plex_manager.setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/bottom_nav_movieDetails"
+        android:name="com.esilvwl.plex_manager.home.movie.details.MovieDetailsFragment"
+        android:label="fragment_movie_details"
+        tools:layout="@layout/fragment_movie_details">
+        <argument android:name="itemId"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+        <action
+            android:id="@+id/action_bottom_nav_movieDetails_self"
+            app:destination="@id/bottom_nav_movieDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottom_nav_serieDetails"
+        android:name="com.esilvwl.plex_manager.home.serie.details.SerieDetailsFragment"
+        android:label="SerieDetailsFragment"
+        tools:layout="@layout/fragment_serie_details">
+        <argument android:name="itemId"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+        <action
+            android:id="@+id/action_bottom_nav_serieDetails_self"
+            app:destination="@id/bottom_nav_serieDetails" />
+    </fragment>
+</navigation>
