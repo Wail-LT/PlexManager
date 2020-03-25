@@ -56,7 +56,7 @@ class MovieDetailsFragment : Fragment() {
             run {
                 similarMovieList.clear()
                 if(movieDetails!!.itemList.isNotEmpty())
-                    similarMovieList.addAll(Utils.removeNullPath(movieDetails!!).itemList.subList(0,6))
+                    similarMovieList.addAll(Utils.removeNullPath(movieDetails).itemList.subList(0,6))
                 else
                     similarMoviesLabel.visibility = View.GONE
                 recyclerv.apply {

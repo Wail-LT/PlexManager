@@ -39,7 +39,7 @@ class SettingFragment : Fragment() {
     private fun getSavedValues()
     {
         //Get all element from sharedPreferences
-        val preferences = sharedPreferences!!.all
+        val preferences = sharedPreferences.all
         if(preferences.isNotEmpty())
         {
             serverIp.setText(preferences[PREF_IP].toString())
