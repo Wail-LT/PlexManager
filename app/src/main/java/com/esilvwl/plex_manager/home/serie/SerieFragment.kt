@@ -55,7 +55,8 @@ class SerieFragment : Fragment() {
                 serieListByGenre,
                 onItemListener = OnItemListener(
                     (context as AppCompatActivity),
-                    R.id.action_bottom_nav_home_to_bottom_nav_serieDetails
+                    //C'etait là l'erreur j'ai enlevé "navigateToSerie="
+                    navigateToSerie = R.id.action_bottom_nav_home_to_bottom_nav_serieDetails
                 )
             )
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)

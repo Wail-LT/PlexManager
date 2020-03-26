@@ -103,7 +103,7 @@ class SerieDetailsFragment : Fragment() {
                     similarMovieList,
                     onItemListener = OnItemListener(
                         (context as AppCompatActivity),
-                        R.id.action_bottom_nav_serieDetails_self
+                        navigateToSerie = R.id.action_bottom_nav_serieDetails_self
                     )
                 )
             layoutManager = GridLayoutManager(context, 3)
